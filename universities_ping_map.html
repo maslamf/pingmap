@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e256bc2de88f65595c765dd04c7ef5e7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e256bc2de88f65595c765dd04c7ef5e7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e256bc2de88f65595c765dd04c7ef5e7 = L.map(
+                "map_e256bc2de88f65595c765dd04c7ef5e7",
+                {
+                    center: [50.8503, 10.3515],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e10d4df7db8b5001099f6685ab3431fe = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_e10d4df7db8b5001099f6685ab3431fe.addTo(map_e256bc2de88f65595c765dd04c7ef5e7);
+        
+    
+            var marker_ba71d057de613dcb34d516cdc2b05bc3 = L.marker(
+                [52.4571, 13.2963],
+                {}
+            ).addTo(map_e256bc2de88f65595c765dd04c7ef5e7);
+        
+    
+            var icon_8e16a522684aa6096da50c987bba6dc9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ba71d057de613dcb34d516cdc2b05bc3.setIcon(icon_8e16a522684aa6096da50c987bba6dc9);
+        
+    
+        var popup_b5d8bd9721670caf49ef7479b1b16a4c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b5c5eae72d6a5627eee75f8a136a744 = $(`<div id="html_8b5c5eae72d6a5627eee75f8a136a744" style="width: 100.0%; height: 100.0%;">Freie Universität Berlin - 72 ms</div>`)[0];
+                popup_b5d8bd9721670caf49ef7479b1b16a4c.setContent(html_8b5c5eae72d6a5627eee75f8a136a744);
+            
+        
+
+        marker_ba71d057de613dcb34d516cdc2b05bc3.bindPopup(popup_b5d8bd9721670caf49ef7479b1b16a4c)
+        ;
+
+        
+    
+    
+            var marker_fc82c897a45b6d1bf40ab78424798a93 = L.marker(
+                [53.5679, 9.9882],
+                {}
+            ).addTo(map_e256bc2de88f65595c765dd04c7ef5e7);
+        
+    
+            var icon_ca9a90c9dc62102e39580f3246e9a77e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fc82c897a45b6d1bf40ab78424798a93.setIcon(icon_ca9a90c9dc62102e39580f3246e9a77e);
+        
+    
+        var popup_91bf09b69e8a342dc6ec423d9c779bb7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ce2b2330265e05afa5a241fad936472 = $(`<div id="html_6ce2b2330265e05afa5a241fad936472" style="width: 100.0%; height: 100.0%;">Universität Hamburg - 21 ms</div>`)[0];
+                popup_91bf09b69e8a342dc6ec423d9c779bb7.setContent(html_6ce2b2330265e05afa5a241fad936472);
+            
+        
+
+        marker_fc82c897a45b6d1bf40ab78424798a93.bindPopup(popup_91bf09b69e8a342dc6ec423d9c779bb7)
+        ;
+
+        
+    
+    
+            var marker_0cd54f6a66668d9ea2a4ff7a914b6243 = L.marker(
+                [50.9413, 6.9578],
+                {}
+            ).addTo(map_e256bc2de88f65595c765dd04c7ef5e7);
+        
+    
+            var icon_3976d2e4596570691479b27b8a8e6bbb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0cd54f6a66668d9ea2a4ff7a914b6243.setIcon(icon_3976d2e4596570691479b27b8a8e6bbb);
+        
+    
+        var popup_3af9e134f9b98022624ccca8f8d31cc4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7702780a1af02d19df87fffcbf02786e = $(`<div id="html_7702780a1af02d19df87fffcbf02786e" style="width: 100.0%; height: 100.0%;">Technische Hochschule Köln - 3 ms</div>`)[0];
+                popup_3af9e134f9b98022624ccca8f8d31cc4.setContent(html_7702780a1af02d19df87fffcbf02786e);
+            
+        
+
+        marker_0cd54f6a66668d9ea2a4ff7a914b6243.bindPopup(popup_3af9e134f9b98022624ccca8f8d31cc4)
+        ;
+
+        
+    
+    
+            var marker_89ddd5e5d7bd724adbd87a77b3767377 = L.marker(
+                [50.9291, 6.9275],
+                {}
+            ).addTo(map_e256bc2de88f65595c765dd04c7ef5e7);
+        
+    
+            var icon_94329213a4731ce4d77ff448e5211ce4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_89ddd5e5d7bd724adbd87a77b3767377.setIcon(icon_94329213a4731ce4d77ff448e5211ce4);
+        
+    
+        var popup_31a537369885ed80797b23bde5b17df4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a99f083af97bcf056e0e5b06545aa935 = $(`<div id="html_a99f083af97bcf056e0e5b06545aa935" style="width: 100.0%; height: 100.0%;">Universität zu Köln - Zeitüberschreitung</div>`)[0];
+                popup_31a537369885ed80797b23bde5b17df4.setContent(html_a99f083af97bcf056e0e5b06545aa935);
+            
+        
+
+        marker_89ddd5e5d7bd724adbd87a77b3767377.bindPopup(popup_31a537369885ed80797b23bde5b17df4)
+        ;
+
+        
+    
+    
+            var marker_6a15667b864cd4bced0ff7b855b9f117 = L.marker(
+                [51.1905, 6.7939],
+                {}
+            ).addTo(map_e256bc2de88f65595c765dd04c7ef5e7);
+        
+    
+            var icon_6233468bddbf91360190f081729bd29e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6a15667b864cd4bced0ff7b855b9f117.setIcon(icon_6233468bddbf91360190f081729bd29e);
+        
+    
+        var popup_bc561f456b3c1f3063b158ac1ed49df1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_412ed7e6d97e19d2007a4656431009dd = $(`<div id="html_412ed7e6d97e19d2007a4656431009dd" style="width: 100.0%; height: 100.0%;">Heinrich-Heine-Universität Düsseldorf - 22 ms</div>`)[0];
+                popup_bc561f456b3c1f3063b158ac1ed49df1.setContent(html_412ed7e6d97e19d2007a4656431009dd);
+            
+        
+
+        marker_6a15667b864cd4bced0ff7b855b9f117.bindPopup(popup_bc561f456b3c1f3063b158ac1ed49df1)
+        ;
+
+        
+    
+    
+            var marker_c8150edaa8a9b1ce272cb70272bd2064 = L.marker(
+                [48.1508, 11.5803],
+                {}
+            ).addTo(map_e256bc2de88f65595c765dd04c7ef5e7);
+        
+    
+            var icon_e3a42d38718ae1f569ec83352c6bfcd9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c8150edaa8a9b1ce272cb70272bd2064.setIcon(icon_e3a42d38718ae1f569ec83352c6bfcd9);
+        
+    
+        var popup_349040e0d648f188d6d02856467ec265 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e8975624a0e43b7a261d01895a19bc6 = $(`<div id="html_3e8975624a0e43b7a261d01895a19bc6" style="width: 100.0%; height: 100.0%;">Ludwig-Maximilians-Universität München - 29 ms</div>`)[0];
+                popup_349040e0d648f188d6d02856467ec265.setContent(html_3e8975624a0e43b7a261d01895a19bc6);
+            
+        
+
+        marker_c8150edaa8a9b1ce272cb70272bd2064.bindPopup(popup_349040e0d648f188d6d02856467ec265)
+        ;
+
+        
+    
+    
+            var marker_a7de296fd713b07812a5e1462bcecb1e = L.marker(
+                [48.2132, 16.3609],
+                {}
+            ).addTo(map_e256bc2de88f65595c765dd04c7ef5e7);
+        
+    
+            var icon_75cb168c687b40174abad52fef312dc9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a7de296fd713b07812a5e1462bcecb1e.setIcon(icon_75cb168c687b40174abad52fef312dc9);
+        
+    
+        var popup_3181b7a9d8226c285cc96bcb714e8437 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c42acec578b6527d4a6c421cb9d94ced = $(`<div id="html_c42acec578b6527d4a6c421cb9d94ced" style="width: 100.0%; height: 100.0%;">Universität Wien - 24 ms</div>`)[0];
+                popup_3181b7a9d8226c285cc96bcb714e8437.setContent(html_c42acec578b6527d4a6c421cb9d94ced);
+            
+        
+
+        marker_a7de296fd713b07812a5e1462bcecb1e.bindPopup(popup_3181b7a9d8226c285cc96bcb714e8437)
+        ;
+
+        
+    
+    
+            var marker_a25c2405ba592e0d683884b8e30be4e4 = L.marker(
+                [50.7781, 6.0639],
+                {}
+            ).addTo(map_e256bc2de88f65595c765dd04c7ef5e7);
+        
+    
+            var icon_fa39022c18f9d5b7cb35bfc9bb7dfca4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a25c2405ba592e0d683884b8e30be4e4.setIcon(icon_fa39022c18f9d5b7cb35bfc9bb7dfca4);
+        
+    
+        var popup_d1edbef63af862552dcb2aabab85b729 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d86a79784a4eaf77625da861e3661f23 = $(`<div id="html_d86a79784a4eaf77625da861e3661f23" style="width: 100.0%; height: 100.0%;">RWTH Aachen - 31 ms</div>`)[0];
+                popup_d1edbef63af862552dcb2aabab85b729.setContent(html_d86a79784a4eaf77625da861e3661f23);
+            
+        
+
+        marker_a25c2405ba592e0d683884b8e30be4e4.bindPopup(popup_d1edbef63af862552dcb2aabab85b729)
+        ;
+
+        
+    
+    
+            var marker_560972ac23acb4627d5eb0796823f010 = L.marker(
+                [50.0878, 14.4205],
+                {}
+            ).addTo(map_e256bc2de88f65595c765dd04c7ef5e7);
+        
+    
+            var icon_1ea547021fcb2e730d222cbe1c6dbea9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_560972ac23acb4627d5eb0796823f010.setIcon(icon_1ea547021fcb2e730d222cbe1c6dbea9);
+        
+    
+        var popup_6aa9a73d966fe41733b968de4148729b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce09ca7d87d1157a915b9f3e73e1c510 = $(`<div id="html_ce09ca7d87d1157a915b9f3e73e1c510" style="width: 100.0%; height: 100.0%;">Karls-Universität Prag - 138 ms</div>`)[0];
+                popup_6aa9a73d966fe41733b968de4148729b.setContent(html_ce09ca7d87d1157a915b9f3e73e1c510);
+            
+        
+
+        marker_560972ac23acb4627d5eb0796823f010.bindPopup(popup_6aa9a73d966fe41733b968de4148729b)
+        ;
+
+        
+    
+    
+            var marker_b4637f6e0dbdec6441f6dd878624884f = L.marker(
+                [51.5074, -0.1278],
+                {}
+            ).addTo(map_e256bc2de88f65595c765dd04c7ef5e7);
+        
+    
+            var icon_b07433c2066ab0683dbc0329ed9355c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b4637f6e0dbdec6441f6dd878624884f.setIcon(icon_b07433c2066ab0683dbc0329ed9355c0);
+        
+    
+        var popup_0ac1831da0efada44df15d0496d648e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f09d029bb13d5239ea056b175fde4307 = $(`<div id="html_f09d029bb13d5239ea056b175fde4307" style="width: 100.0%; height: 100.0%;">University of London - 15 ms</div>`)[0];
+                popup_0ac1831da0efada44df15d0496d648e2.setContent(html_f09d029bb13d5239ea056b175fde4307);
+            
+        
+
+        marker_b4637f6e0dbdec6441f6dd878624884f.bindPopup(popup_0ac1831da0efada44df15d0496d648e2)
+        ;
+
+        
+    
+    
+            var marker_1d2dbe07015a800f63de48c3591a95c6 = L.marker(
+                [52.2394, 21.015],
+                {}
+            ).addTo(map_e256bc2de88f65595c765dd04c7ef5e7);
+        
+    
+            var icon_ba66559869d5c28ba5156564633e40cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1d2dbe07015a800f63de48c3591a95c6.setIcon(icon_ba66559869d5c28ba5156564633e40cd);
+        
+    
+        var popup_a939b98f4a2c829030b463effee8d03d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_970595b84efb1da84bb32a4263271a26 = $(`<div id="html_970595b84efb1da84bb32a4263271a26" style="width: 100.0%; height: 100.0%;">Universität Warschau - 73 ms</div>`)[0];
+                popup_a939b98f4a2c829030b463effee8d03d.setContent(html_970595b84efb1da84bb32a4263271a26);
+            
+        
+
+        marker_1d2dbe07015a800f63de48c3591a95c6.bindPopup(popup_a939b98f4a2c829030b463effee8d03d)
+        ;
+
+        
+    
+</script>
+</html>
